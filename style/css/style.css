@@ -1,0 +1,17 @@
+
+main{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+background-color: aqua;
+
+}
+
+div{
+width: 49%;
+background-color: brown;
+align-items: center;
+text-align: center;
+
+
+}
