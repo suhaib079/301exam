@@ -21,7 +21,7 @@ app.set('view engine' ,'ejs');
 app.get('/',renderAllJobs);
 app.post('/searchjob',searchjobs);
 app.post('/savetodb',saveinDB);
-app.get('/mylist',renderFromDB);
+app.get('/my-list',renderFromDB);
 app.get('/showdetails/:id',detailsshow);
 app.put('/updatejob/:id',updatejob);
 app.delete('/deletejob/:id',deletejob)
