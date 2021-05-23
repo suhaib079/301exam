@@ -19,7 +19,7 @@ app.use(cors());
 app.set('view engine' ,'ejs');
 
 app.get('/',renderAllJobs);
-app.post('/searchjob',searchjobs);
+app.get('/searchjob',searchjobs);
 app.post('/savetodb',saveinDB);
 app.get('/my-list',renderFromDB);
 app.get('/showdetails/:id',detailsshow);
