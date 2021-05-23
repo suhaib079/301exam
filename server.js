@@ -31,7 +31,7 @@ function deletejob(req,res){
     const sql=`DELETE FROM job WHERE id=$1;`
     const safevalue=[id];
     client.query(sql,safevalue).then(()=>{
-        res.redirect('/mylist')
+        res.redirect('/my-list')
     })
 
 
