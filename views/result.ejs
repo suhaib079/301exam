@@ -12,11 +12,16 @@
     <main>
         <h1>segfegf</h1>
 <div>
+    <%suhaib.forEach(data=>{ %>
+        <div>
+        <p>title:<%=obj.title%></p>
+        <p>company:<%=obj.company%></p>
+        <p>location:<%=obj.location%></p>
+        <p> href:"<%=obj.url%>"></p>
+    </div>
+
+  <%  })%>
     
-<p>title:<%=obj.title%></p>
-<p>company:<%=obj.company%></p>
-<p>location:<%=obj.location%></p>
-<p> href:"<%=obj.url%>"></p>
 
 
 <form action="/savetodb" method="post">

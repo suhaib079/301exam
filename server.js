@@ -82,8 +82,8 @@ function saveinDB(req,res){
 
 
 function searchjobs(req,res){
-    const url=`https://jobs.github.com/positions.json?description=python&location=usa`
     const {description}=req.body
+    const url=`https://jobs.github.com/positions.json?description=python&location=usa`
     superagent.get(url).then(data =>{
         res.render('/result',{obj:data.body})
     })
